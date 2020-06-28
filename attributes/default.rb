@@ -43,9 +43,10 @@ default['sssd_ldap']['sssd_conf']['ldap_id_use_start_tls'] = 'true'
 default['sssd_ldap']['sssd_conf']['ldap_tls_reqcert'] = 'never'
 default['sssd_ldap']['sssd_conf']['ldap_tls_cacert'] = value_for_platform_family('rhel' => '/etc/pki/tls/certs/ca-bundle.crt', 'amazon' => '/etc/pki/tls/certs/ca-bundle.crt', 'default' => '/etc/ssl/certs/ca-certificates.crt')
 
-# if you have a domain that doesn't require binding set these two attributes to nil
+# if you have a domain that doesn't require binding set these attributes to nil - see man page for sssd-ldap
 default['sssd_ldap']['sssd_conf']['ldap_default_bind_dn'] = 'cn=bindaccount,dc=yourcompany,dc=com'
 default['sssd_ldap']['sssd_conf']['ldap_default_authtok'] = 'bind_password'
+default['sssd_ldap']['sssd_conf']['ldap_default_authtok_type'] = 'password'
 
 default['sssd_ldap']['authconfig_params'] = '--enablesssd --enablesssdauth --enablelocauthorize --update'
 

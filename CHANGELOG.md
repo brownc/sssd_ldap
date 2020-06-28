@@ -5,6 +5,7 @@ This file is used to list changes made in each version of sssd_ldap.
 ## 5.1.0 (2020-06-28)
 
 - Allows use of sssd-simple to enable/disable access for users/groups
+- Enables support for obsfucated LDAP bind passwords
 
 ## 5.0.09 (2019-01-11)
 
