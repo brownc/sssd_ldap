@@ -61,3 +61,9 @@ default['sssd_ldap']['ldap_ssh'] = false
 # If you need nscd to stay installed set this to false.
 # See https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/usingnscd-sssd.html
 default['sssd_ldap']['uninstall_nscd'] = true
+
+# Optional support for sssd-simple
+default['sssd_ldap']['simple-allow-groups'] = nil
+default['sssd_ldap']['simple-allow-users'] = nil
+default['sssd_ldap']['simple-deny-groups'] = nil
+default['sssd_ldap']['simple-deny-users'] = nil

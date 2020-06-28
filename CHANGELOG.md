@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of sssd_ldap.
 
+## 5.1.0 (2020-06-28)
+
+- Allows use of sssd-simple to enable/disable access for users/groups
+
 ## 5.0.09 (2019-01-11)
 
 - Require Chef 13+ and remove Debian 7 support

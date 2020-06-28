@@ -59,6 +59,11 @@ Attribute                                  | Value                              
 `['ldap_ssh']`                             | `false`                                                                        | Adds ldap enabled ssh keys (true/false)
 `['ldap_autofs']`                          | `false`                                                                        | Adds ldap enabled autofs config (true/false)
 `['uninstall_nscd']`                       | `true`                                                                         | Allows configuration to not uninstall nscd package if required
+`['sssd_conf']['simple_allow_groups']`     | `nil`                                                                          |
+`['sssd_conf']['simple_allow_users']`      | `nil`                                                                          |
+`['sssd_conf']['simple_deny_groups']`      | `nil`                                                                          |
+`['sssd_conf']['simple_deny_users']`       | `nil`                                                                          |
+
 
 ## Recipes
 
